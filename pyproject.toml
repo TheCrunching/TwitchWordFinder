@@ -20,4 +20,4 @@ license-files = ["LICENSE"]
 dependencies = ["twitch-chat-irc"]
 
 [project.scripts]
-TwitchChatWordFinder = "twitchWordFinder.__main__:start()"
+TwitchChatWordFinder = "twitchWordFinder.__main__:main()"
