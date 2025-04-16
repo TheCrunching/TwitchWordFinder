@@ -1,9 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## [1.0.1] April 16, 2025
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## Added
 
-## [1.0.0]
-- Original release.
+- Now checks to see if word is in string as a unique word instead of checking if the whole string is the word.
+- Warnings for when their is variables and such set wrong.
+
+## [1.0.0] April 15, 2025
+
+- Initial release
