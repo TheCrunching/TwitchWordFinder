@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "twitchWordFinder"
-version = "1.0.0"
+version = "0.1.1"
 authors = [
   {name="TheCrunching"}
 ]
