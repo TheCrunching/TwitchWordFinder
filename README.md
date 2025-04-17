@@ -2,6 +2,6 @@
 
 Checks a channels twitch chat for a word.
 
-## Build
+This was made for Mud Flaps!
 
-Build using `python3 -m build` after that you can install by doing `pip install .`.
+[twitch.tv/mud_flaps123](mud_flaps123])
