@@ -6,8 +6,7 @@ from twitch_chat_irc import twitch_chat_irc # Import Module
 
 connection = twitch_chat_irc.TwitchChatIRC() # Start connection
 
-CHANNEL = "mud_flaps123"
-
+channel = input("Please input the channel you would like to find a word in: ")
 word = input("Please input the word you would like to find: ")# Ask user for word
 
 def is_word(message):
@@ -22,7 +21,8 @@ def is_word(message):
 def main():
     """Main function
     """
-    connection.listen(CHANNEL, on_message=is_word)# Start connection to chat
+
+    connection.listen(channel, on_message=is_word)# Start connection to chat
 
 if __name__ == "__main__":
     main()
