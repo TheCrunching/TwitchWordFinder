@@ -5,16 +5,16 @@
 import argparse
 from twitch_chat_irc import twitch_chat_irc # Import Module
 
-__version__ = "1.1.0rc2"
+__version__ = "1.1.0rc3"
 
 parser = argparse.ArgumentParser(
     prog="Twitch Chat Word Finder",
     description="Finds a word in twitch chat.",
     epilog="This is here for no reason.")
 
-parser.add_argument("-c", "--channel", default=None)
-parser.add_argument("-w", "--word", default=None)
-parser.add_argument("-v", "--version", action="version", version=__version__)
+parser.add_argument("-c", "--channel", default=None, description="The channel name.")
+parser.add_argument("-w", "--word", default=None, description="The word that should be found in chat.")
+parser.add_argument("-v", "--version", action="version", version=__version__, description="Prints the applications version.")
 
 args = parser.parse_args()
 
