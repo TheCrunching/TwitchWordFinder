@@ -1,12 +1,18 @@
 # Changelog
 
-## [1.1.0rc2]
+## [1.1.0rc3] - April 18, 2025
+
+### Added
+
+- Added descriptions for the command line arguments.
+
+## [1.1.0rc2] - April 18, 2025
 
 ### Fixed
 
 - Not lowering the imputed word
 
-## [1.1.0rc1]
+## [1.1.0rc1] - April 17, 2025
 
 ### Added
 
