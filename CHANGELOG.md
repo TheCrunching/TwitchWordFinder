@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.0rc2]
+
+### Fixed
+
+- Not lowering the imputed word
+
 ## [1.1.0rc1]
 
 ### Added
