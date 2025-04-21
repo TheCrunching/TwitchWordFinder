@@ -5,7 +5,7 @@
 import argparse
 from twitch_chat_irc import twitch_chat_irc # Import Module
 
-__version__ = "1.1.0rc3"
+__version__ = "1.1.0"
 
 parser = argparse.ArgumentParser(
     prog="Twitch Chat Word Finder",
