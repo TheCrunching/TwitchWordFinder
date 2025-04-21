@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0] - April 21, 2025
+
+### Added
+
+- Now takes arguments from the command line. This however is not required
+- Added descriptions for the command line arguments.
+
+### Changed
+
+- Only prompts user for channel name or for the word when not passed from the command line.
+
+### Fixed
+
+- Not lowering the imputed word
+
 ## [1.1.0rc3] - April 18, 2025
 
 ### Added
