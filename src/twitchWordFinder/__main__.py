@@ -2,10 +2,10 @@
 """Twitch chat word finder!
 """
 
-import argparse
-from twitch_chat_irc import twitch_chat_irc # Import Module
+import argparse# Import argparse
+from twitch_chat_irc import twitch_chat_irc # Import twitch API module
 
-__version__ = "2.0.0+snapshot25w18a"
+__version__ = "2.0.0+snapshot25w18b"
 
 parser = argparse.ArgumentParser(
     prog="Twitch Chat Word Finder",
@@ -36,9 +36,8 @@ def is_word(message):
         message (_type_): The message object passed from listen().
     """
 
-    message['message'] = message['message'].strip(".")
-    message['message'] = message['message'].strip(",")
-    message['message'] = message['message'].strip("?")
+    for character in ".,?!":
+        message['message'] = message['message'].replace(character, "")
 
     if word.lower() in message['message'].lower().split():
         print(f"User {message['display-name']} guessed '{word}'")
