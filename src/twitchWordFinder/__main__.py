@@ -5,16 +5,16 @@
 import argparse
 from twitch_chat_irc import twitch_chat_irc # Import Module
 
-__version__ = "1.1.0"
+__version__ = "2.0.0+snapshot25w18a"
 
 parser = argparse.ArgumentParser(
     prog="Twitch Chat Word Finder",
     description="Finds a word in twitch chat.",
     epilog="This is here for no reason.")
 
-parser.add_argument("-c", "--channel", default=None, description="The channel name.")
-parser.add_argument("-w", "--word", default=None, description="The word that should be found in chat.")
-parser.add_argument("-v", "--version", action="version", version=__version__, description="Prints the applications version.")
+parser.add_argument("-c", "--channel", default=None, help="The channel name.")
+parser.add_argument("-w", "--word", default=None, help="The word that should be found in chat.")
+parser.add_argument("-v", "--version", action="version", version=__version__, help="Prints the applications version.")
 
 args = parser.parse_args()
 
@@ -35,6 +35,10 @@ def is_word(message):
     Args:
         message (_type_): The message object passed from listen().
     """
+
+    message['message'] = message['message'].strip(".")
+    message['message'] = message['message'].strip(",")
+    message['message'] = message['message'].strip("?")
 
     if word.lower() in message['message'].lower().split():
         print(f"User {message['display-name']} guessed '{word}'")
