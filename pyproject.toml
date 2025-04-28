@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "twitchWordFinder"
-version="1.1.0"
+version="2.0.0+snapshot25w18a"
 authors = [
   {name="TheCrunching"}
 ]
@@ -17,7 +17,7 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICENSE"]
-dependencies = ["twitch-chat-irc"]
+dependencies = ["twitch_chat_irc"]
 
 [project.scripts]
 TwitchChatWordFinder = "twitchWordFinder.__main__:main()"
