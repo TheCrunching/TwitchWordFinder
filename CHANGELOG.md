@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.0+snapshot25w18a] - April 28, 2025
+
+### Added
+
+- Now the word can end in *.*, *,*, and *?*.
+
 ## [1.1.0] - April 21, 2025
 
 ### Added
@@ -47,6 +53,11 @@
 ### Changed
 
 - Changed entry point from `start()` to `main()`
+
+### [1.0.0] April 15, 2025
+
+- Initial release
+
 
 ### [1.0.0] April 15, 2025
 
