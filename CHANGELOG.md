@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.0+snapshot25w18b] - April 28, 2025
+
+### Fixed
+
+- What I added last time was not implemented correctly and it did not work. I have fixed it in this snapshot.
+
 ## [2.0.0+snapshot25w18a] - April 28, 2025
 
 ### Added
@@ -53,11 +59,6 @@
 ### Changed
 
 - Changed entry point from `start()` to `main()`
-
-### [1.0.0] April 15, 2025
-
-- Initial release
-
 
 ### [1.0.0] April 15, 2025
 
